@@ -1,0 +1,135 @@
+.balance-page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.balance-popup {
+  background: white;
+  width: 90%;
+  max-width: 320px;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: scaleUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #5f6368;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.balance-popup h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  color: #202124;
+}
+
+.pin-subtitle {
+  margin: 0 0 20px 0;
+  font-size: 13px;
+  color: #5f6368;
+}
+
+.balance-display h1 {
+  font-size: 42px;
+  color: #1a73e8;
+  margin: 20px 0;
+}
+
+.pin-input-field {
+  width: 100%;
+  font-size: 32px;
+  letter-spacing: 12px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  outline: none;
+  color: #1c1e21;
+  background: transparent;
+}
+
+.pin-input-field:focus {
+  border-bottom-color: #1a73e8;
+}
+
+.error-text {
+  color: #d93025;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.view-balance-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-balance-btn:disabled {
+  background-color: #dadce0;
+  cursor: not-allowed;
+}
+
+.account-info {
+  font-size: 14px;
+  color: #5f6368;
+  margin-bottom: 30px;
+}
+
+.secure-badge {
+  font-size: 10px;
+  color: #9aa0a6;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.loader-small {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #1a73e8;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

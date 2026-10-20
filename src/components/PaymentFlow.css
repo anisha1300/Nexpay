@@ -1,0 +1,107 @@
+.np-app-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  z-index: 2000;
+}
+
+.np-view-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.np-top-section {
+  flex: 0 0 auto;
+  padding: 10px 16px;
+}
+.np-header { display: flex; justify-content: space-between; }
+.np-header-btn { background: none; border: none; font-size: 24px; cursor: pointer; }
+
+.np-profile { text-align: center; margin-top: 5px; }
+.np-avatar { 
+  width: 55px; height: 55px; background: #444746; color: #fff; 
+  border-radius: 50%; margin: 0 auto 8px; display: flex; 
+  align-items: center; justify-content: center; font-size: 24px; 
+}
+.np-m-name { font-size: 16px; font-weight: 700; margin: 0; }
+.np-m-id { font-size: 12px; color: #5f6368; margin-top: 2px; }
+
+.np-middle-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 0; 
+}
+.np-amount-row { display: flex; align-items: baseline; }
+.np-symbol { font-size: 24px; margin-right: 4px; }
+.np-val { 
+  font-size: clamp(40px, 12vh, 65px); 
+  font-weight: 500;
+}
+
+.np-bottom-section {
+  flex: 0 0 auto;
+  padding: 12px 10px 60px 10px;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+.np-fab-next {
+  position: absolute;
+  top: -65px;
+  right: 20px;
+  width: 55px; height: 55px;
+  background: #0b57d0; color: #fff; border: none;
+  border-radius: 16px; font-size: 24px;
+}
+
+.np-keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.np-pill-key {
+  height: 48px; 
+  font-size: 20px;
+  background: #eeeeee;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.np-pin-theme { background-color: #fdf8ff !important; }
+.np-close-x { background: none; border: none; font-size: 24px; float: right; cursor: pointer; color: #6750a4; }
+.np-pin-intro { margin-top: 10px; }
+.np-pin-title { font-size: 24px; margin: 5px 0; }
+.np-pin-subtitle { font-size: 14px; color: #79747e; }
+
+.np-pin-dots { display: flex; gap: 12px; height: 30px; }
+.np-dot { color: transparent; font-size: 20px; }
+.np-dot.filled { color: #6750a4; }
+.np-pin-underline { height: 2px; background: #6750a4; width: 100%; max-width: 250px; }
+
+.np-pin-actions { display: flex; justify-content: space-between; margin-bottom: 12px; width: 100%; }
+.np-clear-text { color: #6750a4; background: none; border: none; font-weight: 600; cursor: pointer; }
+.np-next-pill { background: #f3f3f7; padding: 8px 25px; border-radius: 20px; border: none; color: #79747e; }
+.np-next-pill.active { background: #e8def8; color: #1d192b; }
+
+.np-back-rose { background: #fde2e0 !important; border: none; }
+.np-go-indigo { background: #e8def8 !important; border: none; }
+
+.np-success-screen { flex-direction: column; justify-content: center; align-items: center; padding: 20px; text-align: center; }
+.np-success-circle { width: 90px; height: 90px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.np-checkmark { width: 50px; stroke: #fff; stroke-width: 5; fill: none; }
+.np-success-title { font-size: 24px; margin: 0; }
+.np-success-msg { color: #444746; font-size: 14px; margin-top: 5px; }
+.np-tx-id { color: #8e918f; font-size: 11px; margin-top: 10px; }
+.np-home-btn { margin-top: 30px; background: #2962ff; color: #fff; border: none; padding: 12px 40px; border-radius: 25px; font-weight: 600; }
+
